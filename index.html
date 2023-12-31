@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy New Year</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(22, 20, 44);
+      }
+      .fireworks {
+        top: 200px;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: url("https://imgservices-1252317822.image.myqcloud.com/image/081320210201435/e9951400.png");
+        background-size: auto 150px;
+        animation: fireworks 1s steps(24) infinite, random 4s steps(1) infinite;
+      }
+      .Text {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 300px;
+        color: azure;
+        margin-top: 300px;
+                
+      }
+      .para {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+        font-size: 64px;
+        line-height: 64px;
+        color: azure;
+        text-align: center;
+      }
+      @keyframes fireworks {
+        to {
+          background-position: 100%;
+        }
+      }
+
+      @keyframes random {
+        25% {
+          transform: translate(200%, 50%) scale(1.5);
+        }
+        50% {
+          transform: translate(80%, 80%) scale(2.7);
+        }
+        75% {
+          transform: translate(20%, 60%) scale(0.7);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fireworks" style="left: 15%; top: 5%"></div>
+    <div
+      class="fireworks"
+      style="right: 30%; top: 13%; animation-delay: -0.4s"
+    ></div>
+    <div
+      class="fireworks"
+      style="left: 5%; top: 23%; animation-delay: -1.7s"
+    ></div>
+    <div
+      class="fireworks"
+      style="right: 45%; top: 8%; animation-delay: -3.1s"
+    ></div>
+    <h1 class="Text">2024</h1>
+    <p class="para">Happy New Year</p>
+  </body>
+</html>
